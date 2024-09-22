@@ -4,10 +4,17 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+  *:root {
+    --color-primario: #154580;
+    --color-secundario: #3970BE;
+    --color-terciario: #E5F1FF;
+    --color-cuaternario: #444444;
+    
+}
+
   /* Tipografía base */
   body {
-    font-family: Arial, sans-serif;
+    font-family: kanit, sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
