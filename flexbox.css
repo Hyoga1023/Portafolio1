@@ -1,0 +1,19 @@
+.nombre{
+    margin:1% 10% 2% 10%;
+    font-size: 1.5rem;
+}
+.enlaces{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.enlaces__lista{
+    width: 100%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: flex-end;
+    gap:50px
+}
+.enlace_guia{
+    font-size: 1.6rem;
+}

@@ -3,28 +3,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
   }
   *:root {
     --color-primario: #154580;
     --color-secundario: #3970BE;
     --color-terciario: #E5F1FF;
     --color-cuaternario: #444444;
-    
 }
-
   /* Tipografía base */
   body {
-    font-family: kanit, sans-serif;
+    font-family: 'Kanit', sans-serif; /* Nombre de la fuente correcto */
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    color: var(--color-cuaternario);
+    background-color:var(--color-terciario);
     margin: 0;
     padding: 0;
-  }
-  
+}
   /* Enlaces */
   a {
-    color: #007bff;
+    color: var(--color-primario);
     text-decoration: none;
   }
   
@@ -40,6 +38,7 @@
   
   /* Párrafos */
   p {
+    font-family: 'Kanit', sans-serif;
     margin-bottom: 20px;
   }
   
@@ -54,7 +53,7 @@
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #007bff;
+    background-color: var(--color-primario);
     color: white;
     border: none;
     border-radius: 5px;
@@ -62,7 +61,7 @@
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: var(--color-secundario);
   }
   
   /* Contenedores principales */
@@ -77,7 +76,7 @@
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-terciario);
     border-radius: 5px;
   }
   
