@@ -82,5 +82,36 @@
 }
 .titulos__2{
     font-size: 2rem;
+    margin-top: 30px;
     margin-bottom:20px;
+    margin-left: 150px;
+}
+.contenedor__skill {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    width: 70%; 
+    box-sizing: border-box; 
+}
+
+.skills1, .skills2 {
+    display: flex;
+    justify-content: center;
+    padding: 0; 
+    margin: 25px auto; 
+    gap: 20px; 
+}
+
+.skill__img1 {
+    display: block;
+    margin: 0;
+    max-width: 30%; 
+    height: auto;
+}
+.skill__img2 {
+    display: block;
+    margin: 30px 20px;
+    max-width: 50%; 
+    height: auto;
+
 }
