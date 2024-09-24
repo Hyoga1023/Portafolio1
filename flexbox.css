@@ -1,3 +1,13 @@
+
+.contenedor__encabezado{
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 110px;
+    background-color: var(--color-cuaternario); 
+    z-index: 1000; 
+}
 .nombre{
     margin:1% 10% 2% 10%;
     font-size: 1.5rem;
@@ -9,11 +19,63 @@
 }
 .enlaces__lista{
     width: 100%;
-    margin-right: 10%;
+    margin: 0 150px 100px 0;
     display: flex;
     justify-content: flex-end;
     gap:50px
 }
 .enlace_guia{
     font-size: 1.6rem;
+}
+.contenedor__bloque{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20%;
+    width: 100%
+}
+.titulo_principal{
+    font-size: 3rem;
+    margin: 20px 0;
+}
+.contenedor__texto{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    margin-left: 150px;
+    flex: 1;
+}
+.texto_de_parrafo{
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+
+}
+.enlaces__1{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap:50px;
+}
+.contenedor__imagen{
+    width: 368px;
+    height: 368px;
+    margin-left: 10px;
+    margin-right: 150px;
+}
+.selfie{
+    width: 100%;
+    height: 100%; 
+    border-radius: 50%; 
+    object-fit: cover;
+}
+.contenedor__sobre_mi{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+
+}
+.titulos__2{
+    font-size: 2rem;
+    margin-bottom:20px;
 }

@@ -13,16 +13,21 @@
 }
   /* Tipografía base */
   body {
-    font-family: 'Kanit', sans-serif; /* Nombre de la fuente correcto */
+    background-color: black;
+    background-image: url('img/Fondo\ Habitación.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Rubik', sans-serif; /* Nombre de la fuente correcto */
     line-height: 1.6;
-    color: var(--color-cuaternario);
-    background-color:var(--color-terciario);
+    color: var(--color-terciario);
     margin: 0;
     padding: 0;
 }
   /* Enlaces */
   a {
-    color: var(--color-primario);
+    color: var(--color-terciario);
     text-decoration: none;
   }
   
@@ -34,12 +39,14 @@
   h1, h2, h3, h4, h5, h6 {
     margin-bottom: 20px;
     font-weight: bold;
+    color: var(--color-terciario);
   }
   
   /* Párrafos */
   p {
     font-family: 'Kanit', sans-serif;
     margin-bottom: 20px;
+    color: var(--color-terciario);
   }
   
   /* Imágenes */
