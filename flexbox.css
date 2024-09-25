@@ -8,6 +8,7 @@
     background-color: var(--color-cuaternario); 
     z-index: 1000; 
 }
+
 .nombre{
     margin:1% 10% 2% 10%;
     font-size: 1.5rem;
@@ -37,6 +38,7 @@
 .titulo_principal{
     font-size: 3rem;
     margin: 20px 0;
+    color: var(--color-secundario);
 }
 .contenedor__texto{
     display: flex;
@@ -78,14 +80,17 @@
     display: flex;
     flex-direction: column;
     margin: 0 150px;
+    margin-top: 50px;
 }
 .titulo__sobre_mi{
     font-size: 2rem;
+    color: var(--color-secundario);
 }
 .titulos__2{
     font-size: 2rem;
     margin-top: 30px;
     margin-bottom:20px;
+    color: var(--color-secundario);
 }
 .texto_de_sobre_mi{
     font-size: 1.5rem;

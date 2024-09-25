@@ -7,7 +7,7 @@
   }
   *:root {
     --color-primario: #154580;
-    --color-secundario: #3970BE;
+    --color-secundario: rgb(228, 163, 24);
     --color-terciario: #E5F1FF;
     --color-cuaternario: #444444;
     --color-quinario: black;
