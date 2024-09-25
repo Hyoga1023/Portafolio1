@@ -87,6 +87,11 @@
     margin-top: 30px;
     margin-bottom:20px;
 }
+.texto_de_sobre_mi{
+    font-size: 1.5rem;
+    text-align: justify;
+    margin: 20px 0 20px 0;
+}
 .contenedor__skill {
     background-image: url(./img/Textura_Madera_png.png);
     background-repeat: no-repeat;
@@ -101,7 +106,6 @@
     box-sizing: border-box; 
     padding: 30px;
 }
-
 .skills1, .skills2 {
     display: flex;
     justify-content: center;
@@ -115,6 +119,15 @@
     flex-direction: column; 
     align-items: center; 
     max-width: 30%; 
+}
+.texto_de_Skills1{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+.texto_de_Skills2{
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-top: 20px;
 }
 .skill__img1{
     display: block;
@@ -197,6 +210,10 @@
     flex-direction: column;
     margin: 20px 150px;
     padding: 0;
+}
+.texto_de_formación{
+    text-align:justify;
+    font-size: 1.5rem;
 }
 .imagenes__formación{
     display: flex;
