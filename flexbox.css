@@ -302,4 +302,24 @@
     background-color: var(--color-cuaternario); 
     z-index: 1000; 
 }
+.btn-volver {
+    background-color: var(--color-cuaternario); 
+    color: var(--color-terciario); 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    border-color: var(--color-terciario);
+    cursor: pointer; 
+    position: fixed;
+    bottom: 40px; 
+    width: 200px;
+    height: 50px;
+    right: 20px; 
+    z-index: 1000; 
+    display: none; 
+}
+
+.btn-volver.show {
+    display: block; 
+}
 
