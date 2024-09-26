@@ -14,14 +14,14 @@
         <div class="nombre"><em>Portafolio Cesar Martinez</em></div>
         <nav class="enlaces">
             <ul class="enlaces__lista">
-                <li class="enlace_guia"><a href="">Sobre mi</a></li>
-                <li class="enlace_guia"><a href="">Skills</a></li>      
-                <li class="enlace_guia"><a href="">Hobbies</a></li>
-                <li class="enlace_guia"><a href="">Formación</a></li>
-                <li class="enlace_guia"><a href="">Proyectos</a></li>
-                <b class="enlace_guia"><a href="">cesarmartinez99@gmail.com</a></b>   
+                <li class="enlace_guia"><a href="#sobre-mi">Sobre mi</a></li>
+                <li class="enlace_guia"><a href="#skills">Skills</a></li>      
+                <li class="enlace_guia"><a href="#hobbies">Hobbies</a></li>
+                <li class="enlace_guia"><a href="#formacion">Formación</a></li>
+                <li class="enlace_guia"><a href="#proyectos">Proyectos</a></li>
+                <b class="enlace_guia"><a href="mailto:cesarmartinez99@gmail.com">cesarmartinez99@gmail.com</a></b>   
             </ul>
-        </nav>
+        </nav>        
     </header>
     <main>
         <section class="contenedor__bloque">
@@ -51,7 +51,7 @@
             </div>    
         </section>
         <section>
-            <div class="contenedor__sobre_mi">
+            <div id="sobre-mi" class="contenedor__sobre_mi">
                 <h2 class="titulo__sobre_mi">Sobre mi</h2>
                 <p class="texto_de_sobre_mi">Soy un apasionado del desarrollo tecnológico y amante de la inteligencia artificial. 
                     Me encanta aprender cosas nuevas y mejorar mis habilidades, así que estoy siempre listo para enfrentar los 
@@ -65,7 +65,7 @@
                     mi amor por la tecnología con un enfoque centrado en las personas.</p>                
             </div>
         </section>
-                <div class="contenedor__sobre_mi">
+                <div id="skills" class="contenedor__sobre_mi">
                     <h2 class="titulos__2">Skills</h2>
                     <p class="texto_de_Skills1">En mi día a día, trabajo con HTML, CSS y JavaScript, los pilares fundamentales del desarrollo 
                         web. Con <strong>HTML</strong>, estructuro el contenido de las páginas, creando una base sólida que permite que la información 
@@ -105,7 +105,7 @@
                     </div>
                 </div>
             </section>                 
-        <section>
+        <section id="hobbies">
             <div class="Hobbies">  
             <h2 class="titulos__2" >Hobbies</h2>
             <p class="texto_de_hobbies">Mis hobbies son un viaje lleno de color y emociones que dan forma a mi vida. 
@@ -124,7 +124,7 @@
             </div>
         </section>
         <section>
-            <div class="formación">
+            <div id="formacion" class="formación">
                 <h2 class="titulos__2">Formación Academica</h2>
                 <P class="texto_de_formación">Actualmente, estoy cursando una carrera tecnológica en el Politécnico Internacional, 
                     donde tengo la oportunidad de adquirir conocimientos sólidos y prácticos en un entorno académico de calidad. 
@@ -145,7 +145,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="proyectos">
             <div class="experiencia">
                 <h2 class="titulos__2">Proyectos Destacados</h2>
                 <P class="texto__experiencias1">En mi trayectoria como desarrollador web, he trabajado en proyectos que fusionan creatividad, 
@@ -186,6 +186,7 @@
     </main>
     <footer>
         <div class="contenedor__footer">
+            <button class="btn-volver" onclick="volverAlInicio()">Volver al Inicio</button>
             <P>Desarrollado por Cesar Martinez</P>
         </div>    
     </footer>
