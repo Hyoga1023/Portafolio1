@@ -8,7 +8,6 @@
     background-color: var(--color-cuaternario); 
     z-index: 1000; 
 }
-
 .nombre{
     margin:1% 10% 2% 10%;
     font-size: 1.5rem;
@@ -98,14 +97,9 @@
     margin: 20px 0 20px 0;
 }
 .contenedor__skill {
-    background-image: url(./img/Textura_Madera_png.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
     display: flex;
     flex-direction: column;
-    margin: 50px auto;
+    margin: 40px auto 20px auto;
     width: 70%; 
     height: auto;
     box-sizing: border-box; 
@@ -210,6 +204,16 @@
     width: 18%;
     height: auto;
 }
+.imagenes__hobbies {
+    width: 18%;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+.imagenes__hobbies:hover {
+    filter: brightness(1.5);
+    transform: scale(1.05); 
+}
 .formación{
     display: flex;
     flex-direction: column;
@@ -224,7 +228,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 20px;
+    margin-top: 40px;
+}
+.imagenes__formación img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagenes__formación img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
 }
 .logo_texto{
     display: flex;
@@ -237,3 +249,57 @@
     flex-direction: column;
     margin: 50px 150px;
 }
+.desarrollos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+.contenedor__paginas_experiencias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+.contenedor__paginas_experiencias img {
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.contenedor__paginas_experiencias img:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); 
+    transform: scale(1.05); 
+}
+.texto__experiencias1{
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-top: 10px;
+}
+.texto__experiencias{
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-top: 20px;
+}
+.texto__experiencia_img1{
+    font-size: 1.5rem;
+    color: var(--color-secundario);
+}
+.texto__experiencia_img{
+    font-size: 1.5rem;
+    color: var(--color-secundario);
+}
+.contenedor__footer{
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 110px;
+    background-color: var(--color-cuaternario); 
+    z-index: 1000; 
+}
+
