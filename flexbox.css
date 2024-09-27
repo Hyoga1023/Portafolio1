@@ -342,6 +342,7 @@ a{
 .dentro_formulario {
     font-size: 1rem;
     color: var(--color-primario);
+    margin-bottom: 10px;
 }
 form {
     display: flex;
