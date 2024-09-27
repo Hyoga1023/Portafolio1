@@ -420,7 +420,9 @@ button:hover {
         height: 200px;
         margin: 20px auto;
     }
-    .contenedor__sobre_mi,
+    .contenedor__sobre_mi{
+        margin-top: 80px;
+    }
     .formación,
     .experiencia,
     .desarrollos {
@@ -496,7 +498,7 @@ button:hover {
 /* Media Query para Celulares */
 @media (max-width: 480px) {
     .body {
-        background-attachment: scroll; /* Desactivar el efecto fijo */
+        background-attachment: scroll; 
         background-position: center;
         background-size: cover;
     }
@@ -536,7 +538,9 @@ button:hover {
         width: 150px;
         height: 150px;
     }
-    
+    .contenedor__sobre_mi{
+        margin-top: 80px;
+    }
     .titulo__sobre_mi,
     .titulos__2 {
         font-size: 1.5rem;
