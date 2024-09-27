@@ -35,13 +35,13 @@
                     tecnología y mi deseo de ayudar a las empresas a destacar en el mundo digital. Me motiva el 
                     desafío de transformar ideas en realidades tangibles a través del código.</p>
                 <div class="enlaces__1">
-                    <a class="icono__enlace" href="#">
+                    <a class="icono__enlace" href="https://github.com/Hyoga1023">
                         <img src="./img/github.png" alt="Github" class="icono"><em>Github</em>
                     </a>
-                    <a class="icono__enlace" href="#">
+                    <a class="icono__enlace" href="https://www.linkedin.com/in/cesarmartinez99/">
                         <img src="./img/linkedin.png" alt="LinkedIn" class="icono"><em>LinkedIn</em>
                     </a>
-                    <a class="icono__enlace" href="#">
+                    <a class="icono__enlace" href="https://www.instagram.com/cexitar_m/">
                         <img src="./img/instagram.png" alt="Instagram" class="icono"><em>Instagram</em>
                     </a>
                 </div>
@@ -186,13 +186,22 @@
         </section>
         <div class="container_formulario">
             <h1 class="dentro_fomulario">Contacto</h1>
-            <p class="dentro_fomulario">¿Quieres contactarme?<br>Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
+            <p class="dentro_fomulario">¿Quieres contactarme?<br>Complete el siguiente formulario y me pondré en contacto 
+                con usted lo antes posible.</p>
             <form id="contactForm">
-                <input type="text" id="nombre" placeholder="Nombre" required>
-                <input type="email" id="email" placeholder="E-mail" required>
-                <input type="text" id="asunto" placeholder="Asunto" required>
-                <textarea id="mensaje" placeholder="Mensaje" rows="4" required></textarea>
-                <button type="submit">Enviar mensaje</button>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+                <span id="nombreError" class="error"></span>
+            
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto">
+                <span id="asuntoError" class="error"></span>
+            
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+                <span id="mensajeError" class="error"></span>
+            
+                <button type="submit">Enviar</button>
             </form>
         </div>
     </main>
