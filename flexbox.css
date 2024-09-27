@@ -8,6 +8,9 @@
     background-color: var(--color-cuaternario); 
     z-index: 1000; 
 }
+a{
+    text-decoration: none;
+}
 .nombre{
     margin:1% 10% 2% 10%;
     font-size: 1.5rem;
@@ -22,11 +25,19 @@
     margin: 0 150px 100px 0;
     display: flex;
     justify-content: flex-end;
+    text-decoration: none;
     gap:50px
 }
 .enlace_guia{
     font-size: 1.3rem;
     cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    
+}
+.enlace_guia:hover{
+    background-color: var(--color-secundario);
+    text-decoration: none;
 }
 .contenedor__bloque{
     display: flex;
@@ -172,6 +183,7 @@
     100% { transform: translate(-2px, -2px); }
 }
   
+/* Sección Hobbies */
 .Hobbies {
     display: flex;
     flex-direction: column;
@@ -183,27 +195,22 @@
 }
 
 .texto_de_hobbies {
-    display: flex;
-    flex-direction: row;
     text-align: justify;
     width: 100%;
     font-size: 1.5rem;
-    margin: 0;
-    margin-bottom: 30px;
+    margin: 0 0 30px 0;
 }
 
-.contenedor__hobbies{
+.contenedor__hobbies {
     display: flex;
     flex-direction: row;
-    margin: 0 150px;
-    align-items: center;
+    justify-content: center; 
+    flex-wrap: wrap; 
     gap: 30px;
+    margin: 0 150px;
     padding: 0;
 }
-.imagenes__hobbies{
-    width: 18%;
-    height: auto;
-}
+
 .imagenes__hobbies {
     width: 18%;
     height: auto;
@@ -214,6 +221,7 @@
     filter: brightness(1.5);
     transform: scale(1.05); 
 }
+
 .formación{
     display: flex;
     flex-direction: column;
@@ -369,3 +377,214 @@ button:hover {
     background-color: var(--color-cuaternario);
 }
 
+/* Media Query para Tablets */
+@media (max-width: 768px) {
+    .contenedor__encabezado {
+        height: auto;
+        padding: 10px 0;
+    }
+    
+    .nombre {
+        margin: 1% 5%;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    .enlaces__lista {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        gap: 20px;
+    }
+    .enlace_guia:hover{
+        background-color: var(--color-secundario);
+        text-decoration: none;
+    }
+
+    .contenedor__bloque {
+        flex-direction: column;
+        margin-top: 270px;
+    }
+    
+    .contenedor__texto {
+        margin: 20px 20px;
+    }
+    
+    .contenedor__imagen {
+        width: 200px;
+        height: 200px;
+        margin: 20px auto;
+    }
+    
+
+    .contenedor__sobre_mi,
+    .formación,
+    .experiencia,
+    .desarrollos {
+        margin: 20px;
+    }
+    
+    .skills1, .skills2,
+    .contenedor__hobbies,
+    .imagenes__formación,
+    .desarrollos {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .skill {
+        max-width: 80%;
+    }
+    
+
+    .container_formulario {
+        max-width: 90%;
+        padding: 15px;
+    }
+    
+ 
+    .imagenes__hobbies {
+        width: 80%;
+    }
+    
+
+    .contenedor__paginas_experiencias {
+        gap: 20px;
+    }
+    
+
+    .contenedor__footer {
+        height: auto;
+        padding: 20px 10px;
+    }
+    
+    .btn-volver {
+        width: 150px;
+        height: 40px;
+        bottom: 20px;
+        right: 10px;
+    }
+    .Hobbies {
+        margin: 20px;
+        max-width: calc(100% - 40px); 
+    }
+
+    .contenedor__hobbies {
+        flex-direction: row; 
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin: 20px;
+    }
+
+    .imagenes__hobbies {
+        width: 30%; 
+    }
+
+    .texto_de_hobbies {
+        font-size: 1.3rem;
+    }
+}
+
+/* Media Query para Celulares */
+@media (max-width: 480px) {
+    .enlaces__lista {
+        gap: 10px;
+    }
+    .contenedor__bloque {
+        flex-direction: column;
+        margin-top: 200px;
+    }
+    .enlace_guia {
+        font-size: 1rem;
+    }
+    .enlace_guia:hover{
+        background-color: var(--color-secundario);
+        text-decoration: none;
+    }
+    .titulo_principal {
+        font-size: 2rem;
+        margin: 10px 0;
+    }
+    
+    .texto_de_parrafo {
+        font-size: 1.2rem;
+        margin: 10px 0;
+    }
+    
+    .enlaces__1 {
+        gap: 20px;
+    }
+    
+    .icono__enlace em {
+        display: none;
+    }
+    .contenedor__imagen {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .titulo__sobre_mi,
+    .titulos__2 {
+        font-size: 1.5rem;
+        margin: 20px 0 10px 0;
+    }
+    
+    .texto_de_sobre_mi,
+    .texto_de_Skills1,
+    .texto_de_Skills2,
+    .texto_de_hobbies,
+    .texto_de_formación,
+    .texto__experiencias1,
+    .texto__experiencias,
+    .texto__experiencia_img,
+    .texto__experiencia_img1 {
+        font-size: 1.2rem;
+    }
+    
+    .skills1, .skills2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .skill__img1, .skill__img2 {
+        width: 80%;
+    }
+    
+    .Hobbies {
+        margin: 10px;
+        max-width: 100%; 
+    }
+
+    .contenedor__hobbies {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagenes__hobbies {
+        width: 80%; 
+    }
+
+    .texto_de_hobbies {
+        font-size: 1.2rem;
+    }
+
+    .container_formulario {
+        padding: 10px;
+    }
+    
+    label, input, textarea, button {
+        font-size: 1rem;
+    }
+
+    .btn-volver {
+        width: 120px;
+        height: 40px;
+        bottom: 20px;
+        right: 10px;
+        font-size: 0.9rem;
+    }
+    
+    
+}
