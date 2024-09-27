@@ -421,7 +421,9 @@ button:hover {
         margin: 20px auto;
     }
     .contenedor__sobre_mi{
-        margin-top: 80px;
+        margin-left:  5%;
+        margin-right: 5%;
+        margin-top: 30px;
     }
     .formación,
     .experiencia,
@@ -466,7 +468,7 @@ button:hover {
     
     .btn-volver {
         width: 150px;
-        height: 40px;
+        height: 50px;
         bottom: 20px;
         right: 10px;
     }
@@ -489,9 +491,6 @@ button:hover {
 
     .texto_de_hobbies {
         font-size: 1.3rem;
-    }
-    .menu-toggle {
-        display: block;
     }
 }
 
@@ -538,9 +537,7 @@ button:hover {
         width: 150px;
         height: 150px;
     }
-    .contenedor__sobre_mi{
-        margin-top: 80px;
-    }
+
     .titulo__sobre_mi,
     .titulos__2 {
         font-size: 1.5rem;
@@ -596,7 +593,7 @@ button:hover {
 
     .btn-volver {
         width: 120px;
-        height: 40px;
+        height: 50px;
         bottom: 20px;
         right: 10px;
         font-size: 0.9rem;
