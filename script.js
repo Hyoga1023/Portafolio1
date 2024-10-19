@@ -15,7 +15,6 @@ window.onscroll = function() {
         btnVolver.classList.remove('show'); // Oculta el botón
     }
 };
-
 // Validaciones del formulario
 document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();

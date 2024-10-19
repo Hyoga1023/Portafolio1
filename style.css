@@ -12,10 +12,14 @@
     --color-cuaternario: #444444;
     --color-quinario: black;
 }
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
   /* Tipografía base */
   body {
     background-color: black;
-    background-image: url('img/Fondo\ Habitación.png');
+    background-image: url("img/Fondo\ Habitación.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -45,6 +49,7 @@
   
   /* Párrafos */
   p {
+    line-height: 1.4;
     font-family: 'Kanit', sans-serif;
     margin-bottom: 20px;
     color: var(--color-terciario);
