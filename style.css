@@ -102,5 +102,11 @@ html{
   section {
     padding: 40px 0;
   }
-  
+  .logo_des{
+    display: flex;
+    justify-content: center;
+}
+.logo_desarrollador{
+    width: 20%;
+}
   
