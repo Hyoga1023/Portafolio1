@@ -105,6 +105,7 @@ html{
   .logo_des{
     display: flex;
     justify-content: center;
+    margin-bottom: 3%;
 }
 .logo_desarrollador{
     width: 20%;
