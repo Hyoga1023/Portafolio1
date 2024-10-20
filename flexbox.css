@@ -12,8 +12,9 @@ a{
     text-decoration: none;
 }
 .nombre{
+    font-family: 'Barbeque', sans-serif;
     margin:1% 10% 2% 10%;
-    font-size: 1.5rem;
+    font-size: 2.3rem;
 }
 .enlaces{
     display: flex;
@@ -64,10 +65,11 @@ a{
 
 }
 .enlaces__1{
+    font-family: 'Barbeque', sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    font-size: 1.3rem;
+    font-size: 2rem;
     gap:50px;
 }
 .icono__enlace{
@@ -493,6 +495,9 @@ button:hover {
     .texto_de_hobbies {
         font-size: 1.3rem;
     }
+    .logo_desarrollador{
+        width: 50%;
+    }
 }
 
 /* Media Query para Celulares */
@@ -606,6 +611,8 @@ button:hover {
         right: 10px;
         font-size: 0.9rem;
     }
-    
+    .logo_desarrollador{
+        width: 50%;
+    }
     
 }

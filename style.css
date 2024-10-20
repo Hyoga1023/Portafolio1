@@ -12,6 +12,12 @@
     --color-cuaternario: #444444;
     --color-quinario: black;
 }
+@font-face {
+  font-family: 'Barbeque';
+  src: url('./barbeque/Barbeque%20Demo%20V.1.ttf') format('truetype');
+}
+
+
 html{
   scroll-behavior: smooth;
   scroll-padding-top: 7rem;
@@ -24,7 +30,7 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    font-family: 'Rubik', sans-serif; /* Nombre de la fuente correcto */
+    font-family:'Rubik', sans-serif;
     line-height: 1.6;
     color: var(--color-terciario);
     margin: 0;
