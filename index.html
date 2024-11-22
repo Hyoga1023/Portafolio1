@@ -1,219 +1,157 @@
 <!DOCTYPE html>
-<html lang="es-CO">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./flexbox.css">
-    <link rel="icon" type="image/png" href="./img/Selfie.png">
-    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Mi Portafolio</title>
+    <link rel="icon" href="./img/Imagen_prueba_foto_principal.jpg" type="image/x-icon">
+
 </head>
 <body>
-    <header class="contenedor__encabezado">
-        <div class="nombre">Portafolio de Cesar Martinez</div>
-        <nav class="enlaces">
-            <ul class="enlaces__lista">
-                <li class="enlace_guia"><a href="#sobre-mi">Sobre mi</a></li>
-                <li class="enlace_guia"><a href="#skills">Skills</a></li>      
-                <li class="enlace_guia"><a href="#hobbies">Hobbies</a></li>
-                <li class="enlace_guia"><a href="#formacion">Formación</a></li>
-                <li class="enlace_guia"><a href="#proyectos">Proyectos</a></li>
-                <b class="enlace_guia"><a href="mailto:cesarmartinez99@gmail.com">cesarmartinez99@gmail.com</a></b>   
-            </ul>
-        </nav>
-    </header>
+    <canvas id="matrix-bg" style="position: fixed; top: 0; left: 0; z-index: -1;"></canvas>
     
+    <nav class="nav">
+        <a class="scramble-text" href="#inicio">inicio</a>
+        <a href="#sobre-mi">Sobre Mí</a>
+        <a href="#Hobbies">Hobbies</a>
+        <a href="#formacion">Formación</a>
+        <a href="#skills">Skills</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <header id="inicio">
+     <section class="titulo">
+            <h1 id="inicio" class="glitch-text">Hola, Mi Nombre es CESAR MARTINEZ</h1>
+            <h2 class="glitch-text">Y construyo paginas Web</h2><br>  
+            <p class="matrix-paragraph-title">Mi enfoque se centra en diseñar páginas web intuitivas y atractivas, priorizando 
+                siempre la experiencia del usuario. Creo firmemente que una buena página web no 
+                solo debe verse bien, sino que también debe ser fácil de navegar y accesible para todos.</p><br>
+                <div class="iconos">
+                    <a class="texto__iconos" style= "color: var(--naranja-dulce);" href="https://github.com/Hyoga1023"><img src="./img/github.png" alt="github">GitHub</a>
+                    <a class="texto__iconos" style= "color: var(--naranja-dulce);"  href="https://www.instagram.com/cexitar_m/"><img src="./img/instagram.png" alt="instagram">Instagram</a>
+                    <a class="texto__iconos" style= "color: var(--naranja-dulce);"  href="https://www.linkedin.com/in/cesarmartinez99/"><img src="./img/linkedin.png" alt="Linkedin">Linkedin</a>
+                </div>
+     </section>
+        <div class="foto_principal">
+            <img src="./img/Imagen_prueba_foto_principal.jpg" alt="foto desarrollador">
+        </div>
+    </header>
     <main>
-        <section class="contenedor__bloque">
-            <div class="contenedor__texto">   
-                <h1 class="titulo_principal">Hola mi nombre es Cesar Martinez y construyo paginas web</h1>
-                <p class="texto_de_parrafo">Mi enfoque se centra en diseñar páginas web intuitivas y atractivas, 
-                    priorizando siempre la experiencia del usuario. Creo firmemente que una buena página web no 
-                    solo debe verse bien, sino que también debe ser fácil de navegar y accesible para todos.</p>
-                <p class="texto_de_parrafo">Cada página web que construyo es un reflejo de mi pasión por la 
-                    tecnología y mi deseo de ayudar a las empresas a destacar en el mundo digital. Me motiva el 
-                    desafío de transformar ideas en realidades tangibles a través del código.</p>
-                <div class="enlaces__1">
-                    <a class="icono__enlace" href="https://github.com/Hyoga1023">
-                        <img src="./img/github.png" alt="Github" class="icono"><em>Github</em>
-                    </a>
-                    <a class="icono__enlace" href="https://www.linkedin.com/in/cesarmartinez99/">
-                        <img src="./img/linkedin.png" alt="LinkedIn" class="icono"><em>LinkedIn</em>
-                    </a>
-                    <a class="icono__enlace" href="https://www.instagram.com/cexitar_m/">
-                        <img src="./img/instagram.png" alt="Instagram" class="icono"><em>Instagram</em>
-                    </a>
-                </div>
-                
-            </div>
-            <div class="contenedor__imagen">
-                <img class="selfie" src="./img/Selfie.png" alt="Foto personal Cesar Martinez">
-            </div>    
-        </section>
-        <section>
-            <div id="sobre-mi" class="contenedor__sobre_mi">
-                <h2 class="titulo__sobre_mi">Sobre mi</h2>
-                <p class="texto_de_sobre_mi">Soy un apasionado del desarrollo tecnológico y amante de la inteligencia artificial. 
-                    Me encanta aprender cosas nuevas y mejorar mis habilidades, así que estoy siempre listo para enfrentar los 
-                    retos del mundo del desarrollo web. Actualmente, estoy enfocado en el desarrollo front-end y complementando 
-                    mi formación con una especialización en Alura LATAM, lo que me ayuda a dominar herramientas como HTML, CSS 
-                    y JavaScript.</p>
-                <p class="texto_de_sobre_mi">Además, tengo experiencia como asesor de servicio y orientación pensional, lo que me 
-                    ha ayudado a desarrollar buenas habilidades de comunicación y a entender mejor las necesidades de las personas. 
-                    Creo que esa combinación de experiencia técnica y empatía me hace un profesional integral, listo para solucionar 
-                    problemas y aportar valor en cualquier equipo. Mi objetivo es dejar una huella positiva en mi trabajo, uniendo 
-                    mi amor por la tecnología con un enfoque centrado en las personas.</p>                
-            </div>
-        </section>
-                <div id="skills" class="contenedor__sobre_mi">
-                    <h2 class="titulos__2">Skills</h2>
-                    <p class="texto_de_Skills1">En mi día a día, trabajo con HTML, CSS y JavaScript, los pilares fundamentales del desarrollo 
-                        web. Con <strong>HTML</strong>, estructuro el contenido de las páginas, creando una base sólida que permite que la información 
-                        sea accesible y semánticamente correcta. <strong>CSS</strong> es mi aliado para dar vida a estas estructuras, diseñando interfaces 
-                        atractivas y funcionales que mejoran la experiencia del usuario. A través de <strong>JavaScript</strong>, añado interactividad, 
-                        permitiendo que las páginas respondan a las acciones del usuario y se comporten de manera dinámica.</p>
-                    <p class="texto_de_Skills2">A medida que profundizo en mis habilidades, espero ampliar mi arsenal aprendiendo Node y 
-                        React. <strong>Node</strong> me permitirá desarrollar aplicaciones del lado del servidor, dándome la capacidad de crear soluciones 
-                        completas y eficientes que mejoren el rendimiento de mis proyectos. Por otro lado, <strong>React</strong> promete llevar mis 
-                        interfaces a un nuevo nivel, facilitando la creación de componentes reutilizables y optimizando la gestión del 
-                        estado de las aplicaciones. Con estas herramientas, mi objetivo es construir experiencias web más complejas y 
-                        envolventes, fusionando diseño y funcionalidad de manera más efectiva.</p>    
-                </div>
-            <section class="contenedor__skill">
-                <div class="skills1">
-                    <div class="skill">
-                        <img class="skill__img1" src="./img/CSS.png" alt="logo_CSS">
-                        <span class="skill__nombre">CSS</span>
-                    </div>
-                    <div class="skill">
-                        <img class="skill__img1" src="./img/Html 5.png" alt="logo_HTML">
-                        <span class="skill__nombre">HTML 5</span>
-                    </div>
-                    <div class="skill">
-                        <img class="skill__img1" src="./img/JS.png" alt="logo_JavaScript">
-                        <span class="skill__nombre">JavaScript</span>
-                    </div>
-                </div>
-                <div class="skills2">
-                    <div class="skill">
-                        <img class="skill__img2" src="./img/Node.png" alt="logo_Node">
-                        <span class="skill__nombre">Node.js</span>
-                    </div>
-                    <div class="skill">
-                        <img class="skill__img2" src="./img/React.png" alt="logo_React">
-                        <span class="skill__nombre">React</span>
-                    </div>
-                </div>
-            </section>                 
-        <section id="hobbies">
-            <div class="Hobbies">  
-            <h2 class="titulos__2" >Hobbies</h2>
-            <p class="texto_de_hobbies">Mis hobbies son un viaje lleno de color y emociones que dan forma a mi vida. 
-                Pintar al óleo me permite expresar mis pensamientos y sentimientos en un lienzo, mientras que desarrollar es 
-                como resolver un rompecabezas que cobra vida con cada línea de código. Al tocar la guitarra, encuentro una 
-                conexión profunda con mis emociones, reproduciendo melodías que cuentan mil historias. Jugar videojuegos me transporta 
-                a aventuras épicas donde puedo ser quien quiera, y disfrutar de una deliciosa pizza de pepperoni es mi forma 
-                favorita de recompensarme después de un largo día. Cada una de estas pasiones me define y me llena de energía y felicidad.</p>    
-            </div>
-            <div class="contenedor__hobbies">
-                <img class="imagenes__hobbies" src="./img/Pintandopng.png" alt="imagen de dibujar">
-                <img class="imagenes__hobbies" src="./img/Programandopng.png" alt="imagen de alguien desarrollando codigo">
-                <img class="imagenes__hobbies" src="./img/tocar_guitarrapng.png" alt="musico tocando guitarra">
-                <img class="imagenes__hobbies" src="./img/videojuegospng.png" alt="imagen de alguien jugando videojuegos">
-                <img class="imagenes__hobbies" src="./img/Comiendopng.png" alt="imagen de alguien comiendo pizza">
-            </div>
-        </section>
-        <section>
-            <div id="formacion" class="formación">
-                <h2 class="titulos__2">Formación Academica</h2>
-                <P class="texto_de_formación">Actualmente, estoy cursando una carrera tecnológica en el Politécnico Internacional, 
-                    donde tengo la oportunidad de adquirir conocimientos sólidos y prácticos en un entorno académico de calidad. 
-                    Esta institución me brinda una formación integral que combina teoría y práctica, lo cual es fundamental en el 
-                    mundo del desarrollo web. Además, estoy realizando una especialización en Front-End con Alura LATAM, lo que 
-                    me permite profundizar en las últimas tendencias y tecnologías del sector. Esta experiencia complementaria me 
-                    proporciona acceso a recursos de aprendizaje innovadores y a una comunidad de profesionales apasionados, lo 
-                    que enriquece mi formación y me prepara para enfrentar los desafíos del mercado laboral con confianza y creatividad.</P>
-                <div class="imagenes__formación">
-                   <figure class="logo_texto"> 
-                    <img src="./img/Alura Latam.jpg" alt="Logo de Alura LATAM">
-                    <figcaption>Alura LATAM - Especialización en Front-End 2024</figcaption>
-                   </figure> 
-                   <figure class="logo_texto">
-                    <img src="./img/Politecnico Internacional.png" alt="Logo del Politecnico Internacional">
-                    <figcaption>Desarrollo de Software y Aplicaciones Mobiles 2024</figcaption>
-                   </figure> 
-                </div>
-            </div>
-        </section>
-        <section id="proyectos">
-            <div class="experiencia">
-                <h2 class="titulos__2">Proyectos Destacados</h2>
-                <P class="texto__experiencias1">En mi trayectoria como desarrollador web, he trabajado en proyectos que fusionan creatividad, 
-                    interactividad y funcionalidad. A través de HTML, CSS y JavaScript, he logrado crear experiencias
-                     digitales dinámicas que no solo cumplen con los requerimientos técnicos, sino que también ofrecen 
-                     una estética moderna y atractiva. A continuación, presento dos proyectos destacados que demuestran 
-                     mi habilidad para implementar soluciones innovadoras, tanto en el ámbito de la seguridad digital 
-                     como en la creación de contenido interactivo para entretenimiento.</P>
-                <P class="texto__experiencias"> <strong>Encriptador de Texto:</strong> Desarrollo de una aplicación web interactiva que 
-                    permite cifrar y descifrar textos utilizando HTML, CSS y JavaScript. El proyecto cuenta con una
-                     interfaz moderna y dinámica que optimiza la experiencia del usuario. El encriptador permite 
-                     introducir un mensaje en una columna y visualizar su versión cifrada en la columna opuesta. Además, 
-                     implementé una funcionalidad para copiar el texto cifrado y desencriptarlo con un solo clic. 
-                     Para mejorar la estética, realicé modificaciones en el diseño propuesto, añadiendo un fondo 
-                     animado y un footer interactivo que aportan dinamismo y un ambiente digital innovador.</P>
-                <p class="texto__experiencias"><strong>Pagina Web de SuperHéroes</strong> Creación de un sitio web dedicado a la 
-                    temática de superhéroes, con una estructura de tres páginas: una introducción, una dedicada 
-                    a Iron Man y otra a Spiderman. Utilizando JavaScript, implementé interactividad en las imágenes 
-                    para mejorar la navegación y la experiencia visual del usuario. El diseño es colorido, con un 
-                    enfoque en la estética visual mediante la integración de una galería dinámica que exhibe una 
-                    amplia colección de imágenes de superhéroes, generando una experiencia atractiva y envolvente.</p>
-            </div>
-            <div class="desarrollos">
-                <div class="contenedor__paginas_experiencias">
-                    <a href="https://hyoga1023.github.io/Challenge/">
-                    <img src="./img/Encriptador de Texto.png" alt="imagen de la pagina del encriptador de texto">
-                    </a>
-                    <p class="texto__experiencia_img">Encriptador de Texto</p>
-                </div>
-                <div class="contenedor__paginas_experiencias">
-                    <a href="https://heroes-de-comics.vercel.app/index.html">
-                    <img src="./img/Heroes de Comics.png" alt="imagen de la pagina creada de heroes">
-                    </a>
-                    <p class="texto__experiencia_img">Heroes de Comics</p>
+        <section id="sobre-mi" class="sobre_mi"><br>
+            <h2 class="scramble-text">Sobre Mi</h2><br>
+            <p class="matrix-paragraph">Soy un apasionado del desarrollo tecnológico y amante de la inteligencia artificial. 
+                Me encanta aprender cosas nuevas y mejorar mis habilidades, así que estoy siempre listo para enfrentar los retos 
+                del mundo del desarrollo web. Actualmente, estoy enfocado en el desarrollo front-end y complementando mi 
+                formación con una especialización en Alura LATAM, lo que me ayuda a dominar herramientas como HTML, CSS y JavaScript.</p>
+        </section><br><br>
+        <section id="Hobbies" class="Hobbies">
+            <div class="hobbies_sub">
+                <div class="hobbies_img">
+                    <img src="./img/ControlNeon.png" alt="control en Neon">
                 </div>    
+                <div class="hobbies_text">
+                    <h2 class="scramble-text">Hobbies</h2><br>
+                    <p class="matrix-paragraph">Mis hobbies llenan mi vida de color y emoción. Pintar al óleo expresa mis pensamientos, 
+                        mientras programar es un reto que cobra vida con cada línea. La guitarra conecta mis emociones con melodías 
+                        llenas de historias, y los videojuegos me llevan a aventuras épicas. Terminar el día con una pizza de pepperoni 
+                        es mi recompensa favorita. Estas pasiones me definen, llenándome de energía, creatividad y alegría.</p>
+                </div>
             </div>
+        </section><br><br>
+        <section id="formacion" class="formación"><br>
+            <h2 class="scramble-text" style="margin-left: 0;">Formación Academica</h2><br>
+            <div class="formacion_sub">
+                <p class="matrix-paragraph">Actualmente, estudio en el Politécnico Internacional, donde adquiero conocimientos 
+                    prácticos en desarrollo web, combinando teoría y práctica. Además, estoy realizando una especialización en 
+                    Front-End con Alura LATAM, lo que me permite profundizar en las últimas tendencias y tecnologías del sector. 
+                    Esta formación me brinda acceso a recursos innovadores y una comunidad profesional que enriquece mi aprendizaje, 
+                    preparándome para enfrentar los desafíos del mercado laboral con confianza y creatividad.</p><br>
+                <div class="estudios">
+                    <img src="./img/Alura Latam.jpg" alt="iconos tecnologias">
+                    <img src="./img/Politecnico Internacional.png" alt="iconos tecnologias">
+                </div> 
+            </div>        
+        </section><br>
+        <section id="skills" class="skills"><br>
+            <h2 class="scramble-text" style="margin-left: 0;">Skills</h2><br>
+            <div class="skills_sub">
+                <p class="matrix-paragraph">En mi día a día, trabajo con HTML, CSS y JavaScript para desarrollar páginas web 
+                    funcionales y atractivas. HTML estructura el contenido, CSS mejora la apariencia y JavaScript agrega interactividad. 
+                    Busco expandir mis habilidades aprendiendo Node para crear aplicaciones del lado del servidor y React para optimizar 
+                    interfaces y gestionar el estado de manera eficiente. Con estas herramientas, mi objetivo es construir experiencias 
+                    web más complejas y envolventes, combinando diseño y funcionalidad de forma efectiva.</p>
+                <div class="logos">
+                    <img src="./img/html5-icon-png-1.jpg" alt="iconos tecnologias">
+                </div> 
+            </div>        
         </section>
-        <div class="container_formulario">
-            <h1 class="dentro_fomulario">Contacto</h1>
-            <p class="dentro_fomulario">¿Quieres contactarme?<br>Completa el siguiente formulario y me pondré en contacto 
-                contigo lo antes posible.</p>
-            <form id="contactForm">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre">
-                <span id="nombreError" class="error"></span>
-            
-                <label for="asunto">Asunto:</label>
-                <input type="text" id="asunto" name="asunto">
-                <span id="asuntoError" class="error"></span>
-            
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje"></textarea>
-                <span id="mensajeError" class="error"></span>
-            
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
+            <section id="proyectos" class="section">
+                <div class="container">
+                    <h2 class="scramble-text">Mis Proyectos</h2><br>
+                    <div class="grid">
+                        <div class="card" style="border: var(--neon-green) 0.2px solid;">
+                            <img src="./img/Encriptador_de_Texto.png" alt="Encriptador de Texto"><br><br>
+                            <h3 class="proyectos_t">Encriptador de Texto</h3><br>
+                            <p  class="proyectos_p">Desarrollé un encriptador de texto web con HTML, CSS y JavaScript, 
+                                que <strong style="color: var(--naranja-dulce);">cifra/descifra mensajes</strong>, permite copiarlos fácilmente y ofrece una interfaz moderna. 
+                                Personalicé el diseño con un fondo animado y un footer interactivo, optimizando la 
+                                experiencia del usuario en un entorno dinámico e innovador.</p>
+                            <button class="btn" onclick="window.location.href='https://hyoga1023.github.io/Challenge/';">Ver más</button>
+                        </div>
+                        <div class="card" style="border:var(--naranja-dulce) 0.2px solid;">
+                            <img src="./img/Heroes_de_Comics.png" alt="Heroes_de_Comics"><br><br>
+                            <h3 class="proyectos_t">Historia de los Comics</h3><br>
+                            <p  class="proyectos_p">Diseñé un sitio web de superhéroes con tres páginas (introducción, 
+                                Iron Man y Spiderman), destacando un diseño colorido y una galería dinámica. 
+                                Usé JavaScript para añadir interactividad en imágenes, mejorando la navegación y creando 
+                                una experiencia visual atractiva y envolvente para el usuario.</p>
+                                <button class="btn" onclick="window.location.href='https://heroes-de-comics.vercel.app/index.html';">Ver más</button>
+                        </div>
+                        <div class="card" style="border: var(--accent-color) 0.2px solid;">
+                            <img src="./img/AluraGeek.png" alt="AluraGeek"><br><br>
+                            <h3 class="proyectos_t">AluraGeek</h3><br>
+                            <p  class="proyectos_p">Esta herramienta está diseñada para ayudarte a administrar fácilmente los productos que se mostrarán en la página principal del proyecto. Aquí puedes:
+                            <strong style="color: var(--naranja-dulce);">Listar productos</strong> Ver un catálogo de los productos disponibles.
+                            <strong style="color: var(--naranja-dulce);">Crear productos</strong> Agregar nuevos productos al inventario con detalles como nombre, precio e imagen.
+                            <strong style="color: var(--naranja-dulce);">Eliminar productos</strong> Quitar del listado aquellos productos que ya no desees mostrar</p>
+                            <button class="btn" onclick="window.location.href='https://alura-geek-liart-three.vercel.app/';">Ver más</button>
+                        </div>
+                        <div class="card" style="border: var(--neon-green) 0.2px solid;">
+                            <img src="./img/Final_mundo.png" alt="Juego fin del Mundo"><br><br>
+                            <h3 class="proyectos_t">Juego Final del Mundo</h3><br>
+                            <p  class="proyectos_p">Aplicacion creada con orientacion GitHub-Copilot y Javascript. Tomando la <strong style="color: var(--naranja-dulce);">Libreria P5.js</strong> 
+                                se desarrolla un juego clasico de Pong con animación, sonido y dibujo.</p>
+                            <button class="btn" onclick="window.location.href='https://juego-final-del-mundo.vercel.app/';">Ver más</button>
+                        </div>
+                        <div class="card" style="border: var(--naranja-dulce) 0.2px solid;">
+                            <img src="./img/Fokus.png" alt="Fokus"><br><br>
+                            <h3 class="proyectos_t">Fokus</h3><br>
+                            <p  class="proyectos_p"><strong>Aplicacion con la tecnica Pomodoro para trabajo y pausa activa.</strong>
+                            Aplicacion responsiva que usa tecnologias HTML, CSS y JavaScript con cambios de fondo, activación de sonido
+                            e inicio de temporizador y click en botones para pausar y reiniciar.</p>
+                            <button class="btn" onclick="window.location.href='https://fokus-nine-iota.vercel.app/';">Ver más</button>
+                        </div>
+                        <div class="card" style="border: var(--accent-color) 0.2px solid;">
+                            <img src="./img/AluraPlay.png" alt="AluraPlay"><br><br>
+                            <h3 class="proyectos_t">AluraPlay</h3><br>
+                            <p  class="proyectos_p">Pagina enfocada en el uso de Flexbox y diagramación en tecnologias HTML y
+                                CSS. Con base primaria <strong style="color: var(--naranja-dulce);">first Mobile</strong>, trabajo basico uso de contenedores, padding, margin, flex-direction, justify-content, align-items, flex-wrap, gap.
+                                y demas. Super necesarios para el desarrollo de aplicaciones responsivas.</p>
+                            </p>
+                            <button class="btn" onclick="window.location.href='https://fokus-nine-iota.vercel.app/';">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
     </main>
-    <footer>
-        <div class="contenedor__footer">
-            <button class="btn-volver" onclick="volverAlInicio()">Volver al Inicio</button>
-        </div> 
-        <div class="logo_des">
-            <img class="logo_desarrollador" src="./img/logo_letra_blanca_sin_fondo.png" alt="logo_desarrollador">
-        </div>
-            </footer>
-    <script src="script.js"></script>  
+    <script src="matrix.js"></script>
+    <script src="Interactividad.js"></script>
+    <!--<script src="televisor.js"></script>-->
+    <a href="#inicio" class="btn-flotante">↑ Inicio</a>
 </body>
+<footer class="footer">
+    <p>&#169; 2024 Cesar Martínez. Todos los derechos reservados.</p>
+    <a  id="contacto" class="Logo_desarrollador" href="https://github.com/Hyoga1023"><img src="./img/logo_letra_blanca_sin_fondo.png" alt="logo desarrollador"></a>
+</footer>
 </html>
